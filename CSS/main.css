@@ -1,0 +1,157 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+    display: block;
+
+}
+
+body {
+
+    line-height: 1;
+
+}
+
+ol, ul {
+
+    list-style: none;
+
+}
+
+blockquote, q {
+
+    quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+    content: '';
+
+    content: none;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* ------------------------------------------------------------------ */
+
+body {
+    width: 1000px;
+    margin: 10px auto;
+    font-size: 18px;
+    background: #fff;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header {
+    background: lightgray;
+    float: left;
+}
+header .top {
+    height: 650px;
+    width: 200px;
+}
+header .top .logo img {
+    /* background: orange; */
+    width: 90%;
+    height: 35px;
+    margin: 30px 10px;
+}
+header .top .menu .navi li {
+    background: #000;
+    text-align: center;
+    padding: 15px;
+}
+header .top .menu .navi li a {
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+}
+.bodywrap .imgslide {
+    float: left;
+    width: 80%;
+    /* background: orange; */
+    position: relative;
+}
+.bodywrap .imgslide span {
+    color: #eee;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    opacity: 0.7;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.contents {
+    float: left;
+}
+.tabmenu {
+    float: left;
+}
+.tabmenu li.active a {
+    background: red;
+}
